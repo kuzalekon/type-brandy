@@ -1,0 +1,27 @@
+* text=auto
+
+# Git
+.gitignore      text
+.gitattributes  text
+.gitconfig       text
+.gitmodules     text
+
+# Sources
+*.js  text
+*.ts  text
+
+# Data
+*.json  text
+*.yaml  text
+*.yml   text
+
+# Others
+*.txt       text
+*.md        text
+*.markdown  text
+README      text
+LICENSE     text
+AUTHORS     text
+NEWS        text
+COPYRIGHT   text
+INSTALL     text
