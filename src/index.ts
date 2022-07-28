@@ -1,5 +1,4 @@
-interface Flavoring<Base, Kind extends string> {
-  readonly __base__: Base;
+interface Flavoring<Kind extends string> {
   readonly __kind__?: Kind;
 }
 
@@ -8,7 +7,7 @@ interface Branding<Base, Kind extends string> {
   readonly __kind__: Kind;
 }
 
-type Flavor<Base, Kind extends string> = Base & Flavoring<Base, Kind>;
+type Flavor<Base, Kind extends string> = Base & Flavoring<Kind>;
 type Brand<Base, Kind extends string> = Base & Branding<Base, Kind>;
 
 type AnyBrand = Brand<unknown, string>
