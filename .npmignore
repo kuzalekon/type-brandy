@@ -49,6 +49,12 @@ typings/
 # EditorConfig file
 .editorconfig
 
+# Prettier config
+.prettierrc*
+
+# ESLint config
+.eslintrc*
+
 # Optional eslint cache
 .eslintcache
 
