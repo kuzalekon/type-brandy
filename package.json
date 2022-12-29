@@ -1,10 +1,11 @@
 {
-  "name": "ts-branding",
+  "name": "type-brandy",
   "version": "1.0.2",
   "description": "Nominal typing for TypeScript",
   "keywords": [
     "typescript",
     "ts",
+    "flow",
     "typings",
     "brand",
     "branding",
@@ -16,13 +17,13 @@
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "license": "MIT",
-  "homepage": "https://github.com/kalexey89/ts-branding#readme",
+  "homepage": "https://github.com/kuzalekon/ts-branding#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kalexey89/ts-branding.git"
+    "url": "git+https://github.com/kuzalekon/ts-branding.git"
   },
   "bugs": {
-    "url": "https://github.com/kalexey89/ts-branding/issues",
+    "url": "https://github.com/kuzalekon/ts-branding/issues",
     "email": "kyznecov.alexey@gmail.com"
   },
   "scripts": {
