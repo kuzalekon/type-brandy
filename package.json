@@ -17,13 +17,13 @@
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "license": "MIT",
-  "homepage": "https://github.com/kuzalekon/ts-branding#readme",
+  "homepage": "https://github.com/kuzalekon/type-brandy#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kuzalekon/ts-branding.git"
+    "url": "git+https://github.com/kuzalekon/type-brandy.git"
   },
   "bugs": {
-    "url": "https://github.com/kuzalekon/ts-branding/issues",
+    "url": "https://github.com/kuzalekon/type-brandy/issues",
     "email": "kyznecov.alexey@gmail.com"
   },
   "scripts": {
