@@ -10,7 +10,7 @@ interface Branding<Base, Kind extends string> {
 type Flavor<Base, Kind extends string> = Base & Flavoring<Kind>;
 type Brand<Base, Kind extends string> = Base & Branding<Base, Kind>;
 
-type AnyBrand = Brand<unknown, string>
+type AnyBrand = Brand<unknown, string>;
 type BaseOf<B extends AnyBrand> = B['__base__'];
 
 type Brander<Brand extends AnyBrand> = (value: BaseOf<Brand>) => Brand;
