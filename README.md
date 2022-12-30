@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="type-brandy" />
+  <img src="logo.svg" with="400" height="400" alt="type-brandy" />
 </p>
 <hr>
 
