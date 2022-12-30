@@ -18,13 +18,13 @@ Branding also has its uses. We will use the stricter approach when:
 * A type error admitted by implicit conversion could lead to a dangerous error, such as when using types to access tokens for authorization.
 ## Installation
 ```
-$ npm install ts-branding --save-dev
-$ yarn add ts-branding --dev
-$ pnpm add ts-branding --save-dev
+$ npm install type-brandy --save-dev
+$ yarn add type-brandy --dev
+$ pnpm add type-brandy --save-dev
 ```
 ## Examples
 ```ts
-import { Flavor } from 'ts-branding';
+import { Flavor } from 'type-brandy';
 
 type UserId = Flavor<number, 'User'>;
 type BlogId = Flavor<number, 'Blog'>;
@@ -39,7 +39,7 @@ const userId: UserId = 2000;      // OK
 const user = getUserById(blogId); // Compile time error
 ```
 ```ts
-import { Brand, make } from 'ts-branding';
+import { Brand, make } from 'type-brandy';
 
 type ISO8601Date = Brand<string, 'ISO8601Date'>;
 
