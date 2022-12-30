@@ -22,7 +22,7 @@ $ npm install type-brandy --save-dev
 $ yarn add type-brandy --dev
 $ pnpm add type-brandy --save-dev
 ```
-## Examples
+## Usage examples
 ### Flavoring
 ```ts
 import { Flavor } from 'type-brandy';
