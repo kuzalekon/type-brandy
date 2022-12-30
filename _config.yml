@@ -1,6 +1,1 @@
-remote_theme: niklasbuschmann/contrast@v2.11
-lang: "en"
-external:
-  - {title: Github, icon: github, url: "https://github.com/kuzalekon/type-brandy"}
-  - {title: NPM, icon: cube, url: "https://www.npmjs.com/package/type-brandy"}
-  
+remote_theme: sighingnow/jekyll-gitbook
