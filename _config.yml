@@ -1,4 +1,3 @@
-remote_theme: daattali/beautiful-jekyll
-layout: minimal
-plugins:
-- jekyll-remote-theme
+theme: minima
+minima:
+  skin: auto
