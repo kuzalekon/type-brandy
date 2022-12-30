@@ -81,8 +81,8 @@ src/
 test/
 
 # Images
-.svg
-.png
-.jpg
-.jpeg
-.webp
+*.svg
+*.png
+*.jpg
+*.jpeg
+*.webp
