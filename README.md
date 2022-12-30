@@ -18,9 +18,9 @@ Branding also has its uses. We will use the stricter approach when:
 * A type error admitted by implicit conversion could lead to a dangerous error, such as when using types to access tokens for authorization.
 ## Installation
 ```bash
-npm install type-brandy --save-dev
-yarn add type-brandy --dev
-pnpm add type-brandy --save-dev
+$ npm install type-brandy --save-dev
+$ yarn add type-brandy --dev
+$ pnpm add type-brandy --save-dev
 ```
 ## Usage examples
 ### Flavoring
