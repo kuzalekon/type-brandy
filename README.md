@@ -14,7 +14,7 @@ Both methods are useful. But in practice, flavoring is more often applicable. It
 * You want to annotate the type of an argument with semantic information in a way that TypeScript can trace for you and make visible in e.g. editor tooltips while still using simple types at runtime.
 
 Branding also has its uses. We will use the stricter approach when:
-* We want to write code that can safely assume that some data validation has occurred. For example - `DateString` type which must be a valid ISO8601 date string.
+* We want to write code that can safely assume that some data validation has occurred. For example - `IsoDate` type which must be a valid [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date string.
 * A type error admitted by implicit conversion could lead to a dangerous error, such as when using types to access tokens for authorization.
 ## Installation
 ```
@@ -23,6 +23,7 @@ $ yarn add type-brandy --dev
 $ pnpm add type-brandy --save-dev
 ```
 ## Examples
+### Flavoring
 ```ts
 import { Flavor } from 'type-brandy';
 
@@ -38,21 +39,22 @@ const userId: UserId = 2000;      // OK
 
 const user = getUserById(blogId); // Compile time error
 ```
+### Branding
 ```ts
 import { Brand, make } from 'type-brandy';
 
-type DateString = Brand<string, 'DateStr'>;
+type IsoDate = Brand<string, 'IsoDate'>;
 
-const DateString = make<DateString>((value: string) => {
+const IsoDate = make<IsoDate>((value: string) => {
   if (new Date(value).toJSON() !== value) {
     throw new TypeError('invalid ISO 8601 date string');
   }
 });
 
 // Throws compile time error
-const date1: DateString = '2000-01-01T00:00:00.000Z';
+const date1: IsoDate = '2000-01-01T00:00:00.000Z';
 // Throws runtime error
-const date3: DateString = DateString('9999-99-99T99:99:99.999Z');
+const date3: IsoDate = IsoDate('9999-99-99T99:99:99.999Z');
 // Compilation would be successful
-const date2: DateString = DateString('2000-01-01T00:00:00.000Z');
+const date2: IsoDate = IsoDate('2000-01-01T00:00:00.000Z');
 ```
