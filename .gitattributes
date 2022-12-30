@@ -3,7 +3,7 @@
 # Git
 .gitignore      text
 .gitattributes  text
-.gitconfig       text
+.gitconfig      text
 .gitmodules     text
 
 # Sources
@@ -14,6 +14,12 @@
 *.json  text
 *.yaml  text
 *.yml   text
+
+# Images
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.svg   text
 
 # Others
 *.txt       text
