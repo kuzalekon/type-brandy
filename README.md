@@ -17,13 +17,16 @@ Branding also has its uses. We will use the stricter approach when:
 * We want to write code that can safely assume that some data validation has occurred. For example - `IsoDate` type which must be a valid [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date string.
 * A type error admitted by implicit conversion could lead to a dangerous error, such as when using types to access tokens for authorization.
 ## Installation
+
 ```bash
 $ npm install type-brandy --save-dev
 $ yarn add type-brandy --dev
 $ pnpm add type-brandy --save-dev
 ```
+
 ## Usage examples
 ### Flavoring
+
 ```ts
 import { Flavor } from 'type-brandy';
 
@@ -39,7 +42,9 @@ const userId: UserId = 2000;      // OK
 
 const user = getUserById(blogId); // Compile time error
 ```
+
 ### Branding
+
 ```ts
 import { Brand, make } from 'type-brandy';
 
