@@ -4,7 +4,7 @@
 <hr>
 
 ## About this package
-With `ts-branding` package You can achieve [nominal typing](https://basarat.gitbook.io/typescript/main-1/nominaltyping) by leveraging a technique that is called "type branding" in TypeScript world. This works by intersecting a base type with a object type with a non-existent property. It's very similar to Flow's [opaque type aliases](https://flow.org/en/docs/types/opaque-types/).
+With `type-brandy` package You can achieve [nominal typing](https://basarat.gitbook.io/typescript/main-1/nominaltyping) by leveraging a technique that is called "type branding" in TypeScript world. This works by intersecting a base type with a object type with a non-existent property. It's very similar to Flow's [opaque type aliases](https://flow.org/en/docs/types/opaque-types/).
 ## Why type branding is important?
 Let's say You have two types (they could be numbers, strings or even objects) that are structurally equal but are used for different things in your code. For example - number could be a user id, a phone number or tracking number. Many other things, maybe even used for security. To a structural type system there is no way to say that this function should only work on user ids and not be allowed to received other numbers that could result it getting data for the wrong user. People tend to make mistakes, but we can make our lives a little better. We can make it so a user id is not equal to every other number in our application.
 ## Flavoring vs branding
