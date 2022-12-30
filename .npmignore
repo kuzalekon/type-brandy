@@ -79,3 +79,10 @@ jest.config.js
 # Source code
 src/
 test/
+
+# Images
+.svg
+.png
+.jpg
+.jpeg
+.webp
