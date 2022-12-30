@@ -2,6 +2,7 @@
   <img src="logo.png" alt="type-brandy" />
 </p>
 <hr>
+
 ## About this package
 With `ts-branding` package You can achieve [nominal typing](https://basarat.gitbook.io/typescript/main-1/nominaltyping) by leveraging a technique that is called "type branding" in TypeScript world. This works by intersecting a base type with a object type with a non-existent property. It's very similar to Flow's [opaque type aliases](https://flow.org/en/docs/types/opaque-types/).
 ## Why type branding is important?
